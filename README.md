@@ -29,3 +29,9 @@ git clone https://github.com/lyphuong601/Data-Science
 | ------------- | :-----:|
 | K-Store Ecommerce EDA and Sales Prediction Analysis | [🔗](https://github.com/lyphuong601/Data-Science/tree/main/eCommerce-sales-analysis)
 
+## Python
+
+| Title        | Repository  |
+| ------------- | :-----:|
+| Automating import of CSV files into cloud DB | [🔗](https://github.com/lyphuong601/data-science/tree/main/automate-import-csv-to-aws)
+
