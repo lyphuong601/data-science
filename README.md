@@ -19,8 +19,8 @@ git clone https://github.com/lyphuong601/Data-Science
 
 | Title        | Repository  |
 | ------------- | :-----:|
-| Linear Regression Algorithm (BGD) | [🔗](https://github.com/lyphuong601/Data-Science)
-| Logistic Regression Algorithm (BGD) | [🔗](https://github.com/lyphuong601/Data-Science)
+| Linear Regression Algorithm (BGD) | [🔗](https://github.com/lyphuong601/Data-Science/tree/main/linear-regression-BGD-deployment)
+| Logistic Regression Algorithm (BGD) | [🔗](https://github.com/lyphuong601/Data-Science/tree/main/customer-ads-click-prediction)
 
 
 ## ML Projects
