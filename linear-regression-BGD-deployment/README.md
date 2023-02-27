@@ -11,8 +11,8 @@ $$J(\mathbf{w},b) = \frac{1}{2m} \sum\limits_{i = 0}^{m-1} (f_{\mathbf{w},b}(\ma
 Repeat until convergence: 
 
 $$\begin{align*}
-&  \; \; \;w_j = w_j -  \alpha \frac{\partial J(\mathbf{w},b)}{\partial w_j}  \; & \text{for j := 0..n-1} \\ 
-&  \; \; \;  \; \;b = b -  \alpha \frac{\partial J(\mathbf{w},b)}{\partial b} \\
+w_j &= w_j -  \alpha \frac{\partial J(\mathbf{w},b)}{\partial w_j}  \; & \text{for j := 0..n-1} \\ 
+b &= b -  \alpha \frac{\partial J(\mathbf{w},b)}{\partial b} \\
 
 \end{align*}$$
 

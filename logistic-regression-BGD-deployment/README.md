@@ -22,6 +22,7 @@ where:
 *  m is the number of training examples in the data set and:
 
 ### c. Gradient descent: 
+Repeat until convergence: 
 
 $$\begin{align*}
 \frac{\partial J(\mathbf{w},b)}{\partial w_j}  &= \frac{1}{m} \sum\limits_{i = 0}^{m-1} (f_{\mathbf{w},b}(\mathbf{x}^{(i)}) - y^{(i)})x_{j}^{(i)}  +  \frac{\lambda}{m} w_j\\
