@@ -12,8 +12,7 @@ Repeat until convergence:
 
 $$\begin{align*}
 w_j = w_j -  \alpha \frac{\partial J(\mathbf{w},b)}{\partial w_j} \\ 
-b = b -  \alpha \frac{\partial J(\mathbf{w},b)}{\partial b} \\
-
+b = b -  \alpha \frac{\partial J(\mathbf{w},b)}{\partial b}
 \end{align*}$$
 
 where: 
