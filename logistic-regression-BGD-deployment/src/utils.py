@@ -1,7 +1,7 @@
 
 from sklearn.metrics import mean_squared_error, roc_auc_score, roc_curve
-from sklearn.preprocessing import StandardScaler
-from sklearn.preprocessing import PolynomialFeatures
+from sklearn.preprocessing import StandardScaler, PolynomialFeatures
+from sklearn.model_selection import learning_curve
 import pandas as pd
 import numpy as np
 import pandas as pd
@@ -114,3 +114,20 @@ def plot_roc(models, x_train, y_train, x_test, y_test):
     plt.text(0.3, 0.8, "ROC Curve")
     plt.legend(loc="lower right")
     plt.show()   # Display
+
+
+def plot_learning_curve(x_input, y_input, model, **args):
+    train_sizes, train_scores, validation_scores = learning_curve(estimator = model,
+                                                                X = x_input, y = y_input, #train_sizes = train_sizes,
+                                                                cv = 5, scoring = 'neg_mean_squared_error', shuffle=True, **args)
+
+    train_scores_mean = -train_scores.mean(axis=1)
+    validation_scores_mean = -validation_scores.mean(axis=1)
+
+    plt.style.use('seaborn')
+    plt.plot(train_sizes, train_scores_mean, label = 'Training error') 
+    plt.plot(train_sizes, validation_scores_mean, label = 'Validation error')
+    plt.ylabel('MSE', fontsize = 14)
+    plt.xlabel('Training set size', fontsize = 14)
+    plt.title('Logistic regression model learning curve', fontsize = 18, y = 1.03)
+    plt.legend(); plt.show()
