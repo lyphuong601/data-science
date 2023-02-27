@@ -24,11 +24,10 @@ where:
 ### c. Gradient descent: 
 Repeat until convergence: 
 
-$$\begin{align}
-w_j &= w_j -  \alpha \frac{\partial J(\mathbf{w},b)}{\partial w_j}  \; & \text{for j := 0..n-1} \\ 
-b &= b -  \alpha \frac{\partial J(\mathbf{w},b)}{\partial b} \\
-
-\end{align}$$
+$$\begin{align*}
+w_j &= w_j -  \alpha \frac{\partial J(\mathbf{w},b)}{\partial w_j}  \\ 
+b &= b -  \alpha \frac{\partial J(\mathbf{w},b)}{\partial b}
+\end{align*}$$
 
 where: 
 * n is the number of features
