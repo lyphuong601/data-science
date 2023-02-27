@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import copy
 from sklearn.preprocessing import StandardScaler, PolynomialFeatures
 from sklearn.metrics import mean_squared_error
+from sklearn.model_selection import learning_curve
 np.set_printoptions(precision=2)
 
 
@@ -54,3 +55,21 @@ def train_poly(model_t, x_train, y_train, x_cv, y_cv, max_degree=10):
         cv_mses.append(cv_mse)
 
     return degrees, train_mses, cv_mses, scalers, models
+
+
+def plot_learning_curve(x_input, y_input, model, **args):
+    train_sizes, train_scores, validation_scores = learning_curve(estimator=model,
+                                                                  X=x_input, y=y_input,  # train_sizes = train_sizes,
+                                                                  cv=10, scoring='neg_mean_squared_error', shuffle=True, **args)
+
+    train_scores_mean = -train_scores.mean(axis=1)
+    validation_scores_mean = -validation_scores.mean(axis=1)
+
+    plt.style.use('seaborn')
+    plt.plot(train_sizes, train_scores_mean, label='Training error')
+    plt.plot(train_sizes, validation_scores_mean, label='Validation error')
+    plt.ylabel('MSE', fontsize=14)
+    plt.xlabel('Training set size', fontsize=14)
+    plt.title('Linear regression model learning curve', fontsize=18, y=1.03)
+    plt.legend()
+    plt.show()
