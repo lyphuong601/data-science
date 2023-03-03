@@ -71,6 +71,6 @@ The steps that we perform throughout model training and evaluation:
 - The model has high bias problem
 - The gap for the training and validation curve becomes extremely small as the training dataset size increases. This indicates that adding more examples to our model is not going to improve its performance. 
 
-### Too fix high bias problem:
+### To fix high bias problem:
 - Add more features
 - Decrease regularization 
