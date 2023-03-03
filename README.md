@@ -27,7 +27,7 @@ git clone https://github.com/lyphuong601/Data-Science
 
 | Title        | Repository  |
 | ------------- | :-----:|
-| K-Store Ecommerce EDA and Sales Prediction Analysis | [🔗](https://github.com/lyphuong601/Data-Science/tree/main/eCommerce-sales-analysis)
+| Online Sales Order EDA| [🔗](https://github.com/lyphuong601/data-science/tree/main/online-sales-order-EDA)
 
 ## Python
 
