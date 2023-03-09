@@ -29,6 +29,9 @@ git clone https://github.com/lyphuong601/Data-Science
 | ------------- | :-----:|
 | Online Sales Order EDA| [🔗](https://github.com/lyphuong601/data-science/tree/main/online-sales-order-EDA)
 | Telcom's Customer Churn Prediction | [🔗](https://github.com/lyphuong601/data-science/tree/main/Telco-customer-churn)
+| USA Housing Price Prediction | [🔗](https://github.com/lyphuong601/data-science/tree/main/usa-house-price-prediction)
+| Advertising Ads Clicked Classification | [🔗](https://github.com/lyphuong601/data-science/tree/main/advertising-ads-click-classification)
+
 
 ## Python
 
