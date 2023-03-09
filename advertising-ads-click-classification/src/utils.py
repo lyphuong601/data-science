@@ -23,14 +23,6 @@ def load_data(filename: str, **kwargs) -> pd.DataFrame:
     df = pd.read_csv(filename, **kwargs)
     return df
 
-
-def zscore_normalize_features(X):
-    mu = np.mean(X, axis=0)
-    sigma = np.std(X, axis=0)
-    X_norm = (X - mu)/sigma
-    return (X_norm, mu, sigma)
-
-
 ##########################################################
 # Model Selction - Plotting
 ##########################################################
@@ -117,17 +109,18 @@ def plot_roc(models, x_train, y_train, x_test, y_test):
 
 
 def plot_learning_curve(x_input, y_input, model, **args):
-    train_sizes, train_scores, validation_scores = learning_curve(estimator = model,
-                                                                X = x_input, y = y_input, #train_sizes = train_sizes,
-                                                                cv = 5, scoring = 'neg_mean_squared_error', shuffle=True, **args)
+    train_sizes, train_scores, validation_scores = learning_curve(estimator=model,
+                                                                  X=x_input, y=y_input,  # train_sizes = train_sizes,
+                                                                  cv=5, scoring='neg_mean_squared_error', shuffle=True, **args)
 
     train_scores_mean = -train_scores.mean(axis=1)
     validation_scores_mean = -validation_scores.mean(axis=1)
 
     plt.style.use('seaborn')
-    plt.plot(train_sizes, train_scores_mean, label = 'Training error') 
-    plt.plot(train_sizes, validation_scores_mean, label = 'Validation error')
-    plt.ylabel('MSE', fontsize = 14)
-    plt.xlabel('Training set size', fontsize = 14)
-    plt.title('Logistic regression model learning curve', fontsize = 18, y = 1.03)
-    plt.legend(); plt.show()
+    plt.plot(train_sizes, train_scores_mean, label='Training error')
+    plt.plot(train_sizes, validation_scores_mean, label='Validation error')
+    plt.ylabel('MSE', fontsize=14)
+    plt.xlabel('Training set size', fontsize=14)
+    plt.title('Logistic regression model learning curve', fontsize=18, y=1.03)
+    plt.legend()
+    plt.show()
