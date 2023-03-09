@@ -28,10 +28,11 @@ git clone https://github.com/lyphuong601/Data-Science
 | Title        | Repository  |
 | ------------- | :-----:|
 | Online Sales Order EDA| [🔗](https://github.com/lyphuong601/data-science/tree/main/online-sales-order-EDA)
+| Telcom's Customer Churn Prediction | [🔗](https://github.com/lyphuong601/data-science/tree/main/Telco-customer-churn)
 
 ## Python
 
 | Title        | Repository  |
 | ------------- | :-----:|
-| Automating import of CSV files into cloud DB | [🔗](https://github.com/lyphuong601/data-science/tree/main/automate-import-csv-to-aws)
+| Automating import of CSV files into AWS RDS | [🔗](https://github.com/lyphuong601/data-science/tree/main/automate-import-csv-to-aws)
 
