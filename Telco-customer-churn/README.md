@@ -32,7 +32,7 @@
     <li>Test set accuracy score: 0.539</li>
   </ul>
   Model selection: 
-  <p align="center"><img src="img/model_comparison.png" height="250" width="500"></p>
+  <p align="center"><img src="img/model_comparison.png" height="300" width="600"></p>
 
   GradientBoostingClassifier gives the best performance
 
