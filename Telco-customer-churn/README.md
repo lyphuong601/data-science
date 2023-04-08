@@ -26,11 +26,26 @@
 <h3>2. Data descriptions</h3>
 <h3>3. Oversampling minority class</h3>
 <h3>4. Model training and performance</h3>
+  Base model:
+  <ul>
+    <li>Test set F1 score: 0.591</li> 
+    <li>Test set accuracy score: 0.539</li>
+  </ul>
+  Model selection: 
+  <p align="center"><img src="img/model_comparison.png" height="250" width="500"></p>
+
+  GradientBoostingClassifier gives the best performance
+
+  Final tuned model:
+  <ul>
+    <li>Test set F1 score: 0.651</li> 
+    <li>Test set accuracy score: 0.805</li>
+  </ul>
 
 ## Conclusion
 
 - Sucessfully predict 65% of customer churning
-- Improved model performance by approximately 10%, compared to base model
+- Final tuned model improved overall model performance by approximately 10% (F1 Score) and by approximately 50% (Accuarcy score), compared to base model
 
 ## Projects Completed
 
