@@ -10,12 +10,13 @@ git clone https://github.com/lyphuong601/Data-Science
 
 # Contents
 1. [Machine Learning](#machine-learning)
-2. [ML Projects](#ml-projects)
+2. [Supervised Learning Projects](#supervised-learning)
+2. [Unsupervised Learning Projects](#unsupervised-learning)
 3. [Python](#python)
 
 
 
-## Machine Learning
+## Machine Learning Algorithm
 
 | Title        | Repository  |
 | ------------- | :-----:|
@@ -23,7 +24,7 @@ git clone https://github.com/lyphuong601/Data-Science
 | Logistic Regression Algorithm (BGD) | [🔗](https://github.com/lyphuong601/Data-Science/tree/main/customer-ads-click-prediction)
 
 
-## ML Projects
+## Supervised Learning
 
 | Title        | Repository  |
 | ------------- | :-----:|
@@ -33,6 +34,11 @@ git clone https://github.com/lyphuong601/Data-Science
 | Advertising Ads Clicked Classification | [🔗](https://github.com/lyphuong601/data-science/tree/main/advertising-ads-click-classification)
 | Amazon Sales Preprocessing & Prediction | [🔗]()
 | Walmart Sales - A Time Series Analysis | [🔗]()
+
+## Unsupervised Learning
+
+| Title        | Repository  |
+| ------------- | :-----:|
 | An End-to-end Customer Segmentation Project | [🔗]()
 
 ## Python
