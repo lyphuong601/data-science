@@ -26,7 +26,7 @@
 <h3>2. Data descriptions</h3>
 <h3>3. Oversampling minority class</h3>
 <h3>4. Model training and performance</h3>
-  Base model:
+  Base model (Logistics Regression):
   <ul>
     <li>Test set F1 score: 0.591</li> 
     <li>Test set accuracy score: 0.539</li>
@@ -34,18 +34,18 @@
   Model selection: 
   <p align="center"><img src="img/model_comparison.png" height="300" width="600"></p>
 
-  GradientBoostingClassifier gives the best performance
+  I choose GradientBoostingClassifier as the final model and use it to tune the hyperparameter because it gives the best performance
 
-  Final tuned model:
+  Final tuned model (GradientBoostingClassifier):
   <ul>
-    <li>Test set F1 score: 0.651</li> 
-    <li>Test set accuracy score: 0.805</li>
+    <li>Test set F1 score: 0.645</li> 
+    <li>Test set accuracy score: 0.847</li>
   </ul>
 
 ## Conclusion
 
-- Sucessfully predict 65% of customer churning
-- Final tuned model improved overall model performance by approximately 10% (F1 Score) and by approximately 50% (Accuarcy score), compared to base model
+- Sucessfully predict 64.5% of customer churning
+- Final tuned model improved overall model performance by 9.1% in F1 Score and by 57.14% in Accuarcy score, compared to base model
 
 ## Projects Completed
 
