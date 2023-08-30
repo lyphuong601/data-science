@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import copy
 import matplotlib.pyplot as plt
-from sklearn.metrics import mean_squared_error, roc_curve, auc, roc_auc_score, precision_recall_curve, f1_score
+from sklearn.metrics import mean_squared_error, roc_curve, auc, roc_auc_score, precision_recall_curve, f1_score, recall_score
 from sklearn.preprocessing import StandardScaler, PolynomialFeatures
 
 
@@ -96,7 +96,7 @@ def plot_roc(models, x_test, y_test):
 def plot_auc(models, x_test, y_test):
     for m in models:
         model = m['model']  # select the model
-        # model.fit(x_train, y_train)  # train the model
+        # model.fit(X_train_scaled, y_train)  # train the model
         y_pred = model.predict(x_test)  # predict the test data
         lr_precision, lr_recall, _ = precision_recall_curve(y_test, model.predict_proba(
             x_test)[:, 1])  # Compute False postive rate, and True positive rate
@@ -118,3 +118,10 @@ def plot_auc(models, x_test, y_test):
     plt.text(0.3, 0.8, "AUC Curve")
     plt.legend(loc="lower right")
     plt.show()   # Display
+
+
+def evaluate_model(y_train, yhat, y_test, yhat_test):
+    print(f"Training MSE: {(mean_squared_error(y_train, yhat) / 2):.5f}")
+    print(f"Test MSE: {(mean_squared_error(y_test, yhat_test) / 2):.5f}")
+    print(f"Test set F1 score: {f1_score(y_test, yhat_test):.5f}")
+    print(f"Test set accuracy score: {recall_score(y_test, yhat_test):.5f}")

@@ -1,6 +1,6 @@
 # Telco Customer Churn Analysis
 
-<p align="center"><img src="img/smiley.jpeg" height="200" width="200"></p>
+<p align="center"><img src="img/Telco customer.png" height="300" width="400"></p>
 
 ## 📌 Introduction
 - Telco is a telecomunication company. To grow its business, it priortizes resources on keeping existing customers happy and reducing churn rate. The company is currently looking for a model to predict customer churn so as to put them on its customer retention program.
@@ -32,7 +32,7 @@
     <li>Test set accuracy score: 0.539</li>
   </ul>
   Model selection: 
-  <p align="center"><img src="img/model_comparison.png" height="300" width="600"></p>
+  <p align="center"><img src="img/model_comparison.png" height="300" width="550"></p>
 
   I choose GradientBoostingClassifier as the final model and use it to tune the hyperparameter because it gives the best performance
 
